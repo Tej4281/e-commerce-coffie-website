@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- image on text start -->
+
+  <div class="card bg-dark text-white " id="home">
+    <img src="/assets/img/home-img.jpeg" class="card-img" alt="Stony Beach"/>
+    <div class="card-img-overlay"><br><br>
+      <h1 class="card-title pt-5">FRESH COFFEE IN <br>THE MORNING</h1>
+      <p class="card-text pt-5">
+        Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Placeat Labore, Sint Cupiditate Distinctio Tempora Reiciendis.
+      </p>
+      <p class="card-text">Last updated 3 mins ago</p>
+      <a href="" class="btn btn-warning">Get Yours Now</a>
+    </div>
+  </div>
+
+
+   <!-- image on text start end-->
+
+
+   <!-- about us  start-->
+
+   <div class="container-fluid pt-2"  id="aboutus"><br><br>
+    <h1 style="color: #c27a47;font-weight:600;font-size:60px;font-family:'Times New Roman', Times, serif;" class="text-center"> ABOUT  <span style="color: white;"> US </span><br></h1><br><br>
+    <div class="row">
+      <div class="col-md">
+       <img src="/assets/img/about-img.jpeg" alt="" width="100%" height="100%">
+      </div>
+      <div class="col-md">
+       <h1 class="text-white">What Makes Our Coffee Special?</h1><br>
+       <p class="text-white">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Voluptatibus Qui Ea Ullam, Enim Tempora Ipsum Fuga Alias Quae Ratione A Officiis Id Temporibus Autem? Quod Nemo Facilis Cupiditate. Ex, Vel?<br><br><br>
+
+        Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Odit Amet Enim Quod Veritatis, Nihil Voluptas Culpa! Neque Consectetur Obcaecati Sapiente?</p>
+
+        <button class="btn btn-warning">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+   <!-- about us  start end-->
+
+
+   <!-- our menu start -->
+   <div class="container-fluid pt-5" id="menu">
+    <!-- <h1 class="text-center text" >OUR MENU</h1> -->
+    <h1 style="color: #c27a47;font-weight:600;font-size:60px;font-family:'Times New Roman', Times, serif;" class="text-center"> OUR  <span style="color: white;"> MENU </span><br></h1><br><br>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let data of data">
+        <div class="card bg-dark text-center">
+          <div class="text-center">
+            <img src="{{data.img}}" class="rounded mt-2" alt="...">
+          </div>
+          <!-- <img src="{{data.img}}" class="card-img-top" alt="..."> -->
+          <div class="card-body">
+            <h5 class="text-center">{{data.name | uppercase}}</h5>
+            <p class="text-center">{{data.price | currency:'INR'}}</p>
+            <button class="btn btn-warning"> Add To Cart</button>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+
+   <!-- our menu start ends-->
+
+<!-- our products start-->
+<div class="container-fluid pt-5" id="products">
+
+  <h1 style="color: #c27a47;font-weight:600;font-size:60px;font-family:'Times New Roman', Times, serif;" class="text-center"> OUR  <span style="color: white;"> PRODUCTS </span><br></h1><br><br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let info of info">
+      <div class="card bg-dark text-center">
+        <div class="text-center">
+          <img src="{{info.img}}" class="rounded mt-2" alt="...">
+        </div>
+        <!-- <img src="{{data.img}}" class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="text-center">{{info.name | uppercase}}</h5>
+          <p class="text-center">{{info.price | currency:'INR'}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- our products ends-->
+
+<!-- customer review start -->
+<div class="container-fluid" id="Review">
+  <h1 style="color: #c27a47;font-weight:600;font-size:60px;font-family:'Times New Roman', Times, serif;" class="text-center pt-5"> CUSTOMER  <span style="color: white;"> REVIEWS </span><br></h1><br><br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col" *ngFor="let customer of customer">
+      <div class="card bg-dark text-center">
+        <div class="card-body">
+          <img src="/assets/img/quote-img.png" alt="" class="quote">
+          <p class="text-center">{{customer.name}}</p>
+        </div>
+        <div class="text-center">
+          <img src="{{customer.img}}" class="img" alt="...">
+          <p class="text-center">{{customer.uname}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- customer review start ends-->
+
+
+<!-- contact us start -->
+<div class="container-fluid" id="contact">
+  <h1 style="color: #c27a47;font-weight:600;font-size:60px;font-family:'Times New Roman', Times, serif;" class="text-center pt-5">CONTACT<span style="color: white;"> US </span><br></h1><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0109366686843!2d72.99666661437658!3d19.06325675732799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c14de6ccd175%3A0xcc4d528663e5e573!2sVashi!5e0!3m2!1sen!2sin!4v1669100572280!5m2!1sen!2sin" width="100%" height="100%"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col-md">
+      <h1 class="text-center">GET IN TOUCH</h1>
+      <form>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="form2Example1" class="form-control border border-white" />
+          <label class="form-label" for="form2Example1">Email address</label>
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+          <input type="password" id="form2Example2" class="form-control border border-white" />
+          <label class="form-label" for="form2Example2">Password</label>
+        </div>
+
+        <!-- 2 column grid layout for inline styling -->
+        <div class="row mb-4">
+          <div class="col d-flex justify-content-center">
+            <!-- Checkbox -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+              <label class="form-check-label" for="form2Example31"> Remember me </label>
+            </div>
+          </div>
+
+          <div class="col">
+            <!-- Simple link -->
+            <a href="#!">Forgot password?</a>
+          </div>
+        </div>
+
+        <!-- Submit button -->
+        <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+
+        <!-- Register buttons -->
+        <div class="text-center">
+          <p>Not a member? <a href="#!">Register</a></p>
+          <p>or sign up with:</p>
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-google"></i>
+          </button>
+
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-twitter"></i>
+          </button>
+
+          <button type="button" class="btn btn-link btn-floating mx-1">
+            <i class="fab fa-github"></i>
+          </button>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- contact us start ends-->
+
+
+<!-- our blogs started -->
+<div class="container-fluid" id="Blogs">
+  <h1 style="color: #c27a47;font-weight:600;font-size:60px;font-family:'Times New Roman', Times, serif;" class="text-center pt-5"> OUR  <span style="color: white;"> BLOGS </span><br></h1><br><br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col-md" *ngFor="let blogs of blogs">
+      <div class="card bg-dark text-left d-flex justify-content-between">
+        <div class="card-body">
+          <img src="{{blogs.img}}" alt="" class="quote" width="100%">
+          <p class="text-left">{{blogs.name}}</p>
+          <p class="text-left">{{blogs.text}}</p>
+          <p class="text-left">{{blogs.para}}</p>
+          <button class="btn btn-warning">Read More</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- our blogs end -->
+
+<!--footer start -->
+
+
+  <footer class="text-center text-white " style="background-color: rgba(0, 0, 0, 0.925);">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Created By Mr. Web Designer | All Rights Reserved</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+<!-- footer ends -->
+</body>
+</html>

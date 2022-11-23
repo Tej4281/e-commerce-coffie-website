@@ -1,0 +1,48 @@
+
+.card-title{
+  font-size: 50px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 800;
+}
+.card-text{
+  font-size: 25px;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 800;
+}
+.card-img{
+  height: 800px;
+}
+.container-fluid{
+  background-color: black;
+}
+.text-center{
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size:x-large;
+}
+
+.text-left{
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size:x-large;
+}
+.card-img-top{
+  height: 250px;
+  width: 300px;
+  justify-content:space-around;
+}
+.text{
+  color: white;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: 70px;
+
+}
+
+.img{
+  border-radius: 50%;
+  height: auto;
+  width: auto;
+}

@@ -1,0 +1,10 @@
+.nav-item{
+  /* color: white; */
+  font-weight: 800;
+
+  font-family:'Times New Roman', Times, serif ;
+}
+.navbar{
+  background-color: rgba(0, 0, 0, 0.945);
+  /* opacity:0.5px ; */
+}
